@@ -61,7 +61,7 @@ def reply():
                          "To get our *address*")
         elif 1 <= option <= 9:
             cakes = ["Red Velvet Cake", "Dark Forest Cake",
-                     "3.- Ice Cream Cake", "4.- Plum Cake", "5.- Sponge Cake", "6.- Genoise Cake", "7.- Carrot Cake",
+                     "Ice Cream Cake", "Plum Cake", "Sponge Cake", "Genoise Cake", "Carrot Cake",
                      "Butterscotch Cake"]
             selected = cakes[option - 1]
             users.update_one({"number": number}, {"$set": {"status": "address"}})
