@@ -11,8 +11,8 @@ orders = db["orders"]
 app = Flask(__name__)
 
 
-@app.route('/bot', methods=['GET', 'POST'])
-def bot():
+@app.route('/', methods=['GET', 'POST'])
+def reply():
     text = request.form.get('Body')
     number = request.form.get('From')
     number = number.replace('whatsapp:', "")
